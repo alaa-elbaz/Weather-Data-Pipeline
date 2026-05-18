@@ -14,8 +14,15 @@ st.title("🌦️ Weather Data Pipeline Dashboard")
 st.markdown("عرض حي لبيانات الطقس المسحوبة من Open-Meteo API")
 
 def get_data():
-    # الاتصال بالقاعدة (localhost حالياً)
-    db_url = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@localhost:5432/{os.getenv('DB_NAME')}"
+    # التعديل هنا: نقرأ الـ Host من متغيرات البيئة، وإذا لم يجدها يستخدم 'db' كقيمة افتراضية داخل دوكر
+    db_host = os.getenv('DB_HOST', 'db')
+    db_user = os.getenv('DB_USER', 'postgres')
+    db_password = os.getenv('DB_PASSWORD', 'secret')
+    db_name = os.getenv('DB_NAME', 'weather_db')
+    db_port = os.getenv('DB_PORT', '5432')
+
+    # صياغة رابط الاتصال الجديد باستخدام المتغيرات لشبكة دوكر المغلقة
+    db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
     engine = create_engine(db_url)
     return pd.read_sql("SELECT * FROM weather_logs ORDER BY timestamp DESC", engine)
 
@@ -37,4 +44,4 @@ try:
     st.dataframe(df)
 
 except Exception as e:
-    st.warning("بانتظار تشغيل قاعدة البيانات لرؤية البيانات... (شغلي Docker أولاً)")
+    st.warning("بانتظار تشغيل قاعدة البيانات لرؤية البيانات... (تأكدي من تشغيل Docker Compose)")

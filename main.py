@@ -53,19 +53,28 @@ def get_weather_data():
 
     
 def save_to_db(df):
-    db_url = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@localhost:5432/{os.getenv('DB_NAME')}"
+    # التعديل هنا: نقرأ الـ Host من متغيرات البيئة، وإذا لم يجدها يستخدم 'db' كقيمة افتراضية لشبكة دوكر
+    db_host = os.getenv('DB_HOST', 'db')
+    db_user = os.getenv('DB_USER', 'postgres')
+    db_password = os.getenv('DB_PASSWORD', 'secret')
+    db_name = os.getenv('DB_NAME', 'weather_db')
+    db_port = os.getenv('DB_PORT', '5432')
+
+    # صياغة رابط الاتصال الجديد باستخدام المتغيرات
+    db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
     
     try:
         engine = create_engine(db_url)
-        
         table_name = 'weather_logs'
         
-        #  إرسال البيانات
+        # إرسال البيانات
         df.to_sql(table_name, engine, if_exists='append', index=False)
-        print("🚀 Data saved to PostgreSQL successfully!")
+        print("🚀 Data saved to PostgreSQL successfully inside Docker network!")
+        logging.info("تم حفظ البيانات في قاعدة البيانات بنجاح داخل شبكة دوكر ✅")
         
     except Exception as e:
         print(f"❌ Database Error: {e}")
+        logging.error(f"خطأ أثناء الحفظ في قاعدة البيانات: {e}")
 
 
 def get_weather_data():

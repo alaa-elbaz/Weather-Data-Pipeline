@@ -1,16 +1,47 @@
+version: '3.8'
+
 services:
+  # الخدمة الأولى: قاعدة البيانات
   db:
     image: postgres:15
     container_name: weather_postgres
-    restart: always
     environment:
-      POSTGRES_DB: ${DB_NAME}
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secret}
+      POSTGRES_DB: ${DB_NAME:-weather_db}
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - weather_network
+    restart: always
+
+  # الخدمة الثانية: تطبيق البايثون والـ Dashboard
+  web_app:
+    build: .
+    container_name: weather_streamlit_app
+    ports:
+      - "8501:8501"
+    environment:
+      # نغير الـ Host هنا ليكون اسم خدمة قاعدة البيانات "db" بدلاً من localhost
+      DB_HOST: db
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD:-secret}
+      DB_NAME: ${DB_NAME:-weather_db}
+      DB_PORT: 5432
+    volumes:
+      - .:/app
+    networks:
+      - weather_network
+    # نضمن ألا يفتح التطبيق إلا بعد أن تكون قاعدة البيانات جاهزة تماماً
+    depends_on:
+      - db
+    restart: always
 
 volumes:
   postgres_data:
+
+networks:
+  weather_network:
+    driver: bridge
