@@ -1,33 +1,3 @@
-# import urllib.request
-# import json
-# from datetime import datetime
-
-# def get_weather_data():
-#     # إحداثيات القاهرة 
-#     lat, lon = 30.0444, 31.2357
-    
-#     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo"
-    
-#     try:
-#         with urllib.request.urlopen(url) as response:
-#             if response.status != 200:
-#                 raise Exception(f"HTTP status {response.status}")
-#             data = json.load(response)
-#         print("✅ Data fetched successfully!")
-#         return data
-#     except Exception as e:
-#         print(f"❌ Error fetching data: {e}")
-#         return None
-
-# if __name__ == "__main__":
-#     raw_data = get_weather_data()
-#     if raw_data:
-#         # عرض أول 5 سجلات فقط 
-#         print(raw_data['hourly']['time'][:5])
-
-
-
-
 import requests
 import pandas as pd
 import os
@@ -35,91 +5,107 @@ import logging
 from sqlalchemy import create_engine
 from datetime import datetime
 from dotenv import load_dotenv
+import schedule
+import time
 
 load_dotenv()
 
-# إعداد نظام التسجيل (Logging)
 logging.basicConfig(
     filename='pipeline.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-# داخل الدوال، بدلاً من print استخدمي logging.info
-def get_weather_data():
-    logging.info("بدء عملية سحب البيانات...")
-    # ... الكود السابق ...
-    logging.info("تم سحب البيانات بنجاح ✅")
+# 1. تعريف المدن مع إحداثياتها الجغرافية
+CITIES = {
+    'Cairo': {'lat': 30.0444, 'lon': 31.2357},
+    'Alexandria': {'lat': 31.2001, 'lon': 29.9187},
+    'Aswan': {'lat': 24.0889, 'lon': 32.8998}
+}
 
+# 2. جلب البيانات من الـ API
+def get_weather_data(city_name, lat, lon):
+    logging.info(f"⏳ Extracting data for {city_name} from Open-Meteo API...")
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo"
     
-def save_to_db(df):
-    # التعديل هنا: نقرأ الـ Host من متغيرات البيئة، وإذا لم يجدها يستخدم 'db' كقيمة افتراضية لشبكة دوكر
-    db_host = os.getenv('DB_HOST', 'db')
-    db_user = os.getenv('DB_USER', 'postgres')
-    db_password = os.getenv('DB_PASSWORD', 'secret')
-    db_name = os.getenv('DB_NAME', 'weather_db')
-    db_port = os.getenv('DB_PORT', '5432')
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status() 
+        logging.info(f"✅ Data extracted successfully for {city_name}.")
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        logging.error(f"❌ API Connection Error for {city_name}: {e}")
+        return None
 
-    # صياغة رابط الاتصال الجديد باستخدام المتغيرات
+# 3. معالجة وتحويل البيانات (Transformation)
+def process_data(json_data, city_name, lat, lon):
+    if json_data is None:
+        return None
+    try:
+        hourly_data = json_data['hourly']
+        df = pd.DataFrame(hourly_data)
+        df['time'] = pd.to_datetime(df['time'])
+        df.columns = ['timestamp', 'temperature', 'humidity', 'wind_speed']
+        
+        # إضافة البيانات التعريفية (Metadata) للمدينة
+        df['city'] = city_name
+        df['latitude'] = lat
+        df['longitude'] = lon
+        df['created_at'] = datetime.now()
+        
+        logging.info(f"⚡ Transformation complete for {city_name}. Rows: {len(df)}")
+        return df
+    except Exception as e:
+        logging.error(f"❌ Data Transformation Error for {city_name}: {e}")
+        return None
+
+# 4. حفظ البيانات في قاعدة البيانات
+def save_to_db(df):
+    if df is None or df.empty:
+        return
+
+    # التعديل الحاسم هنا: تثبيت الإعدادات صراحة لتطابق الـ Dashboard والـ Docker
+    db_host = 'localhost'  
+    db_user = 'postgres'
+    db_password = 'postgres' # تثبيت الباسورد صراحة
+    db_name = 'weather_db'
+    db_port = '5432'
+
     db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
     
     try:
         engine = create_engine(db_url)
-        table_name = 'weather_logs'
-        
-        # إرسال البيانات
-        df.to_sql(table_name, engine, if_exists='append', index=False)
-        print("🚀 Data saved to PostgreSQL successfully inside Docker network!")
-        logging.info("تم حفظ البيانات في قاعدة البيانات بنجاح داخل شبكة دوكر ✅")
-        
+        # إنشاء الجدول وضخ البيانات
+        df.to_sql('weather_logs', engine, if_exists='append', index=False)
+        logging.info(f"💾 Successfully committed {len(df)} rows to PostgreSQL.")
     except Exception as e:
-        print(f"❌ Database Error: {e}")
-        logging.error(f"خطأ أثناء الحفظ في قاعدة البيانات: {e}")
+        logging.error(f"❌ Database Load Error: {e}")
+        print(f"❌ Database Connection Error: {e}")
 
-
-def get_weather_data():
-    # إحداثيات القاهرة
-    lat, lon = 30.0444, 31.2357
-    url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo"
+# 5. تشغيل الـ Pipeline بالكامل للمدن
+def run_etl_pipeline():
+    logging.info("⏰ بدء تشغيل الـ Multi-City ETL Pipeline...")
+    print(f"⏰ Pipeline started at: {datetime.now()}")
     
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except Exception as e:
-        print(f"❌ Error fetching data: {e}")
-        return None
-
-def process_data(json_data):
-    # 1. استخراج البيانات الساعية
-    hourly_data = json_data['hourly']
-    
-    # 2. تحويل  إلى DataFrame 
-    df = pd.DataFrame(hourly_data)
-    
-    # 3. تحويل عمود الوقت من نصوص إلى  DateTime 
-    df['time'] = pd.to_datetime(df['time'])
-    
-    # 4. إعادة تسمية الأعمدة 
-    df.columns = ['timestamp', 'temperature', 'humidity', 'wind_speed']
-    
-    # 5. إضافة عمود لاسم المدينة (Metadata)
-    df['city'] = 'Cairo'
-    
-    # 6. إضافة عمود يوضح متى تم سحب هذه البيانات (Record Creation Time)
-    df['created_at'] = datetime.now()
-    
-    return df
+    all_city_dfs = []
+    for city_name, coords in CITIES.items():
+        raw_data = get_weather_data(city_name, coords['lat'], coords['lon'])
+        clean_df = process_data(raw_data, city_name, coords['lat'], coords['lon'])
+        if clean_df is not None:
+            all_city_dfs.append(clean_df)
+            
+    if all_city_dfs:
+        final_df = pd.concat(all_city_dfs, ignore_index=True)
+        save_to_db(final_df)
+        print("🚀 Multi-city data saved to PostgreSQL successfully!")
+    else:
+        print("❌ Pipeline execution failed for all cities.")
 
 if __name__ == "__main__":
-    raw_data = get_weather_data()
-    if raw_data:
-        clean_df = process_data(raw_data)
-        save_to_db(clean_df) # الخطوة الجديدة
-
-        # عرض شكل البيانات النهائي
-        print("\n--- Clean Data Sample ---")
-        print(clean_df.head()) # عرض أول 5 سطور
-        
-        print("\n--- Data Info ---")
-        print(clean_df.info()) # عرض أنواع البيانات في كل عمود
+    run_etl_pipeline()
+    schedule.every(1).hours.do(run_etl_pipeline)
+    
+    print("🚀 Automation Multi-City Scheduler is running...")
+    while True:
+        schedule.run_pending()
+        time.sleep(1)

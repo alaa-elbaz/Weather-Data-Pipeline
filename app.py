@@ -4,44 +4,57 @@ from sqlalchemy import create_engine
 import os
 from dotenv import load_dotenv
 
-# تحميل الإعدادات
 load_dotenv()
 
-# إعدادات الصفحة
 st.set_page_config(page_title="Weather Dashboard", layout="wide")
 
-st.title("🌦️ Weather Data Pipeline Dashboard")
-st.markdown("عرض حي لبيانات الطقس المسحوبة من Open-Meteo API")
+st.title("🌦️ Automated Multi-City Weather Data Pipeline")
+st.subheader("عرض حي ومؤتمت لبيانات الطقس لمدن متعددة")
 
-def get_data():
-    # التعديل هنا: نقرأ الـ Host من متغيرات البيئة، وإذا لم يجدها يستخدم 'db' كقيمة افتراضية داخل دوكر
-    db_host = os.getenv('DB_HOST', 'db')
-    db_user = os.getenv('DB_USER', 'postgres')
-    db_password = os.getenv('DB_PASSWORD', 'secret')
-    db_name = os.getenv('DB_NAME', 'weather_db')
-    db_port = os.getenv('DB_PORT', '5432')
+# إعدادات الاتصال - مرنة للـ Local والـ Docker
+db_host = os.getenv('DB_HOST', 'localhost')
+if db_host == 'db' and not os.path.exists('/.dockerenv'):
+    db_host = 'localhost'
 
-    # صياغة رابط الاتصال الجديد باستخدام المتغيرات لشبكة دوكر المغلقة
-    db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
-    engine = create_engine(db_url)
-    return pd.read_sql("SELECT * FROM weather_logs ORDER BY timestamp DESC", engine)
+db_host = 'localhost'
+db_user = 'postgres'
+db_password = 'postgres' # تثبيت نفس الباسورد ليتطابق مع الـ Pipeline
+db_name = 'weather_db'
+db_port = '5432'
+
+db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 
 try:
-    df = get_data()
-
-    # 1. عرض ملخص سريع (Metrics)
-    col1, col2, col3 = st.columns(3)
-    col1.metric("آخر درجة حرارة", f"{df['temperature'].iloc[0]} °C")
-    col2.metric("متوسط الرطوبة", f"{df['humidity'].mean():.1f} %")
-    col3.metric("سرعة الرياح", f"{df['wind_speed'].iloc[0]} km/h")
-
-    # 2. رسم بياني لتغير الحرارة
-    st.subheader("📈 تغير درجات الحرارة خلال الوقت")
-    st.line_chart(df.set_index('timestamp')['temperature'])
-
-    # 3. عرض الجدول الكامل
-    st.subheader("📋 البيانات الخام")
-    st.dataframe(df)
-
+    engine = create_engine(db_url)
+    # جلب البيانات من الجدول
+    df = pd.read_sql("SELECT * FROM weather_logs", engine)
+    
+    if not df.empty:
+        st.success("✅ تم تحميل البيانات بنجاح من قاعدة البيانات!")
+        
+        # فلتر المدن
+        st.sidebar.header("الفلاتر")
+        city = st.sidebar.selectbox("اختر المدينة:", df['city'].unique())
+        city_df = df[df['city'] == city]
+        
+        # عرض البيانات والمقاييس
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric(label=f"آخر درجة حرارة في {city}", value=f"{city_df['temperature'].iloc[-1]} °C")
+        with col2:
+            st.metric(label="الرطوبة", value=f"{city_df['humidity'].iloc[-1]} %")
+        with col3:
+            st.metric(label="سرعة الرياح", value=f"{city_df['wind_speed'].iloc[-1]} km/h")
+            
+        # عرض الخريطة التفاعلية والجدول
+        st.subheader("📍 الموقع الجغرافي للمدينة")
+        st.map(city_df)
+        
+        st.subheader("📊 سجل البيانات التاريخي")
+        st.dataframe(city_df.sort_values(by='timestamp', ascending=False))
+    else:
+        st.warning("⚠️ قاعدة البيانات فارغة، تأكدي من تشغيل سكريبت الـ ETL.")
 except Exception as e:
-    st.warning("بانتظار تشغيل قاعدة البيانات لرؤية البيانات... (تأكدي من تشغيل Docker Compose)")
+    # قفلنا القوس هنا وزودنا طباعة الخطأ الحقيقي عشان لو فيه مشكلة تظهر لنا فوراً بدل الرسالة العامة
+    st.info("💡 بانتظار تشغيل قاعدة البيانات وضخ بيانات المدن... (تأكدي من تشغيل الحاويات الآن)")
+    st.error(f"تفاصيل الخطأ الحالي للـ Connection: {e}")
