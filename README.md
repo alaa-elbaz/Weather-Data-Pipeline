@@ -57,7 +57,8 @@ To run this project locally, follow these steps:
 
     📌 To-Do & Future Roadmap
 
- - [x] **Unit Testing (pytest):** نكتب Unit Tests باستخدام pytest للتأكد من أن الدوال شغال صح.
+ - [x] **Unit Testing (pytest):** 
+ - [x] **Data Validation:** .
 [ ] Production Orchestration: Migrate from the basic schedule library to an enterprise orchestrator like Apache Airflow or n8n for failure monitoring and automated retries.
 
 [ ] Full Containerization: Dockerize the ETL script (main.py) and the web application (app.py) inside docker-compose.yml to achieve environment independence.

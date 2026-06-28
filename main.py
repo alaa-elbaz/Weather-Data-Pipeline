@@ -38,6 +38,7 @@ def get_weather_data(city_name, lat, lon):
         return None
 
 # 3. معالجة وتحويل البيانات (Transformation)
+# 3. معالجة وتحويل البيانات والتحقق من جودتها (Transformation & Validation)
 def process_data(json_data, city_name, lat, lon):
     if json_data is None:
         return None
@@ -47,14 +48,47 @@ def process_data(json_data, city_name, lat, lon):
         df['time'] = pd.to_datetime(df['time'])
         df.columns = ['timestamp', 'temperature', 'humidity', 'wind_speed']
         
-        # إضافة البيانات التعريفية (Metadata) للمدينة
-        df['city'] = city_name
-        df['latitude'] = lat
-        df['longitude'] = lon
-        df['created_at'] = datetime.now()
+        # ─── 🛡️ مرحلة مراقبة جودة البيانات (DATA VALIDATION BLOCK) ───
         
-        logging.info(f"⚡ Transformation complete for {city_name}. Rows: {len(df)}")
-        return df
+        # 1. فحص منطقية درجات الحرارة (مقبول بين -10 و 60 درجة مئوية في مصر)
+        invalid_temp = df[(df['temperature'] < -10) | (df['temperature'] > 60)]
+        if not invalid_temp.empty:
+            logging.warning(f"⚠️ [Data Quality Alert] Detected {len(invalid_temp)} rows with anomalous temperature in {city_name}!")
+            
+        # 2. فحص الرطوبة (يجب أن تكون دائماً بين 0% و 100%)
+        invalid_humidity = df[(df['humidity'] < 0) | (df['humidity'] > 100)]
+        if not invalid_humidity.empty:
+            logging.warning(f"⚠️ [Data Quality Alert] Detected {len(invalid_humidity)} rows with impossible humidity in {city_name}!")
+            
+        # 3. فحص سرعة الرياح (لا يمكن أن تكون بالسالب)
+        invalid_wind = df[df['wind_speed'] < 0]
+        if not invalid_wind.empty:
+            logging.warning(f"⚠️ [Data Quality Alert] Detected {len(invalid_wind)} rows with negative wind speed in {city_name}!")
+
+        # 🔄 فلترة البيانات: الاحتفاظ فقط بالسجلات السليمة 100% واستبعاد التالفة
+        valid_df = df[
+            (df['temperature'] >= -10) & (df['temperature'] <= 60) &
+            (df['humidity'] >= 0) & (df['humidity'] <= 100) &
+            (df['wind_speed'] >= 0)
+        ].copy()
+
+        # حساب عدد الصفوف المستبعدة إن وجدت
+        dropped_rows = len(df) - len(valid_df)
+        if dropped_rows > 0:
+            logging.error(f"❌ [Data Validation Failed] Dropped {dropped_rows} anomalous rows for {city_name} to preserve DB integrity.")
+        
+        if valid_df.empty:
+            return None
+
+        # إضافة البيانات التعريفية (Metadata) للمدينة
+        valid_df['city'] = city_name
+        valid_df['latitude'] = lat
+        valid_df['longitude'] = lon
+        valid_df['created_at'] = datetime.now()
+        
+        logging.info(f"⚡ Transformation & Validation complete for {city_name}. Clean Rows: {len(valid_df)}")
+        return valid_df
+        
     except Exception as e:
         logging.error(f"❌ Data Transformation Error for {city_name}: {e}")
         return None

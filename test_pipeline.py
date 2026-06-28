@@ -66,3 +66,24 @@ def test_process_data_transformation():
     assert list(df.columns) == ['timestamp', 'temperature', 'humidity', 'wind_speed', 'city', 'latitude', 'longitude', 'created_at']
     assert df['city'].iloc[0] == 'Alexandria'
     assert df['temperature'].iloc[0] == 30.0
+
+    # 4. اختبار قدرة الـ Pipeline على كشف وفلترة البيانات غير المنطقية (Validation Test)
+def test_process_data_validation_drops_bad_rows():
+    # محاكاة رد API يحتوي على صفوف سليمة وصفات مستحيلة (حرارة 100 ورطوبة بالسالب)
+    anomalous_json = {
+        "hourly": {
+            "time": ["2026-06-28T12:00", "2026-06-28T13:00", "2026-06-28T14:00"],
+            "temperature_2m": [32.0, 100.0, 28.5],  # الـ 100 غير منطقية
+            "relativehumidity_2m": [55, 40, -15],   # الـ -15 مستحيلة
+            "windspeed_10m": [10.0, 12.0, 14.0]
+        }
+    }
+    
+    # تشغيل الدالة
+    df = process_data(anomalous_json, 'Cairo', 30.0444, 31.2357)
+    
+    # التأكد من أن الـ Pipeline استبعد الصفوف التالفة واحتفظ فقط بالصف الأول السليم
+    assert df is not None
+    assert len(df) == 1  # كانو 3 صفوف، لازم يتبقى 1 فقط سليم
+    assert 100.0 not in df['temperature'].values
+    assert -15 not in df['humidity'].values
