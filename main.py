@@ -7,7 +7,45 @@ from datetime import datetime
 from dotenv import load_dotenv
 import schedule
 import time
+import requests
+from datetime import datetime
+def send_alert(error_message):
+    BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+    CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+    
+    if not BOT_TOKEN or not CHAT_ID:
+        print("Telegram credentials missing in environment variables.")
+        return
+        
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    
+    message = (
+        f"🚨 *Pipeline Failure Alert!*\n\n"
+        f"📅 *Timestamp:* {timestamp}\n"
+        f"❌ *Error Details:* `{error_message}`\n\n"
+        f"⚠️ Please check the container logs ASAP."
+    )
+    
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    payload = {"chat_id": CHAT_ID, "text": message, "parse_mode": "Markdown"}
+    
+    try:
+        response = requests.post(url, json=payload)
+        if response.status_code == 200:
+            print("Alert sent to Telegram successfully!")
+        else:
+            print(f"Failed to send Telegram alert. Status code: {response.status_code}")
+    except Exception as e:
+        print(f"Error sending alert to Telegram: {e}")
 
+# ---- مثال لتطبيقها جوه كود الـ ETL الأساسي بتاعك ----
+try:
+    # هنا كود الـ Pipeline وجلب البيانات
+    pass
+except Exception as e:
+    # أول ما يحصل أي فشل، البوت هيبعتلك فوراً على الموبايل
+    send_alert(str(e))
+    raise e
 load_dotenv()
 
 logging.basicConfig(
