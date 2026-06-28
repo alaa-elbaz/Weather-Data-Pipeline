@@ -1,7 +1,5 @@
-version: '3.8'
-
 services:
-  # الخدمة الأولى: قاعدة البيانات
+  # 1. قاعدة البيانات (PostgreSQL)
   db:
     image: postgres:15
     container_name: weather_postgres
@@ -17,31 +15,43 @@ services:
       - weather_network
     restart: always
 
-  # الخدمة الثانية: تطبيق البايثون والـ Dashboard
+  # 2. واجهة العرض والـ Dashboard (Streamlit)
   web_app:
     build: .
     container_name: weather_streamlit_app
     ports:
       - "8501:8501"
     environment:
-      # نغير الـ Host هنا ليكون اسم خدمة قاعدة البيانات "db" بدلاً من localhost
       DB_HOST: db
-      DB_USER: ${DB_USER:-postgres}
-      DB_PASSWORD: ${DB_PASSWORD:-secret}
-      DB_NAME: ${DB_NAME:-weather_db}
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: weather_db
       DB_PORT: 5432
     volumes:
       - .:/app
     networks:
       - weather_network
-    # نضمن ألا يفتح التطبيق إلا بعد أن تكون قاعدة البيانات جاهزة تماماً
+    depends_on:
+      - db
+    restart: always
+
+  # 3. الـ Orchestrator الرسمي المستقر (n8n)
+  orchestrator_n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    container_name: weather_n8n_orchestrator
+    ports:
+      - "5678:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    networks:
+      - weather_network
     depends_on:
       - db
     restart: always
 
 volumes:
   postgres_data:
+  n8n_data:
 
 networks:
   weather_network:
-    driver: bridge

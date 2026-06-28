@@ -59,6 +59,8 @@ To run this project locally, follow these steps:
 
  - [x] **Unit Testing (pytest):** 
  - [x] **Data Validation:** .
+ - [x] **Production Orchestration:** 
+ - [x] **n8n Orchestrator** 
 [ ] Production Orchestration: Migrate from the basic schedule library to an enterprise orchestrator like Apache Airflow or n8n for failure monitoring and automated retries.
 
 [ ] Full Containerization: Dockerize the ETL script (main.py) and the web application (app.py) inside docker-compose.yml to achieve environment independence.

@@ -210,3 +210,35 @@
 2026-06-27 16:59:30,423 - INFO - \u2705 Data extracted successfully for Aswan.
 2026-06-27 16:59:30,431 - INFO - \u26a1 Transformation complete for Aswan. Rows: 168
 2026-06-27 16:59:30,577 - INFO - \U0001f4be Successfully committed 504 rows to PostgreSQL.
+2026-06-28 11:40:25,255 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 11:40:25,259 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 11:40:26,826 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 11:40:26,845 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 11:40:26,848 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 11:40:28,081 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 11:40:28,115 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 11:40:28,117 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 11:40:28,995 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 11:40:29,033 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 11:40:29,325 - ERROR - ❌ Database Load Error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-28 12:07:53,857 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 12:07:53,861 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 12:07:54,300 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 12:07:54,325 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 12:07:54,327 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 12:07:54,763 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 12:07:54,783 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 12:07:54,785 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 12:07:55,232 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 12:07:55,239 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 12:07:55,663 - ERROR - ❌ Database Load Error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

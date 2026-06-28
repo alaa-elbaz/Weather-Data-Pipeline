@@ -136,10 +136,6 @@ def run_etl_pipeline():
         print("❌ Pipeline execution failed for all cities.")
 
 if __name__ == "__main__":
+    # تشغيل الـ Pipeline مرة واحدة صريحة بناءً على أمر الـ Orchestrator
     run_etl_pipeline()
-    schedule.every(1).hours.do(run_etl_pipeline)
-    
-    print("🚀 Automation Multi-City Scheduler is running...")
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    print("✨ ETL Task executed successfully and finished.")
