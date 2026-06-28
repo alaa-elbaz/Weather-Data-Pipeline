@@ -5,10 +5,27 @@ import logging
 from sqlalchemy import create_engine
 from datetime import datetime
 from dotenv import load_dotenv
-import schedule
-import time
-import requests
-from datetime import datetime
+
+# استدعاء دالة التحليلات المتقدمة من السكريبت الآخر
+from analysis import run_advanced_analytics
+
+# تحميل متغيرات البيئة الآمنة
+load_dotenv()
+
+logging.basicConfig(
+    filename='pipeline.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# 1. تعريف المدن مع إحداثياتها الجغرافية
+CITIES = {
+    'Cairo': {'lat': 30.0444, 'lon': 31.2357},
+    'Alexandria': {'lat': 31.2001, 'lon': 29.9187},
+    'Aswan': {'lat': 24.0889, 'lon': 32.8998}
+}
+
+# دالة إرسال التنبيهات عبر التليجرام عند حدوث خطأ
 def send_alert(error_message):
     BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
     CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
@@ -38,29 +55,6 @@ def send_alert(error_message):
     except Exception as e:
         print(f"Error sending alert to Telegram: {e}")
 
-# ---- مثال لتطبيقها جوه كود الـ ETL الأساسي بتاعك ----
-try:
-    # هنا كود الـ Pipeline وجلب البيانات
-    pass
-except Exception as e:
-    # أول ما يحصل أي فشل، البوت هيبعتلك فوراً على الموبايل
-    send_alert(str(e))
-    raise e
-load_dotenv()
-
-logging.basicConfig(
-    filename='pipeline.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-
-# 1. تعريف المدن مع إحداثياتها الجغرافية
-CITIES = {
-    'Cairo': {'lat': 30.0444, 'lon': 31.2357},
-    'Alexandria': {'lat': 31.2001, 'lon': 29.9187},
-    'Aswan': {'lat': 24.0889, 'lon': 32.8998}
-}
-
 # 2. جلب البيانات من الـ API
 def get_weather_data(city_name, lat, lon):
     logging.info(f"⏳ Extracting data for {city_name} from Open-Meteo API...")
@@ -75,7 +69,6 @@ def get_weather_data(city_name, lat, lon):
         logging.error(f"❌ API Connection Error for {city_name}: {e}")
         return None
 
-# 3. معالجة وتحويل البيانات (Transformation)
 # 3. معالجة وتحويل البيانات والتحقق من جودتها (Transformation & Validation)
 def process_data(json_data, city_name, lat, lon):
     if json_data is None:
@@ -87,30 +80,25 @@ def process_data(json_data, city_name, lat, lon):
         df.columns = ['timestamp', 'temperature', 'humidity', 'wind_speed']
         
         # ─── 🛡️ مرحلة مراقبة جودة البيانات (DATA VALIDATION BLOCK) ───
-        
-        # 1. فحص منطقية درجات الحرارة (مقبول بين -10 و 60 درجة مئوية في مصر)
         invalid_temp = df[(df['temperature'] < -10) | (df['temperature'] > 60)]
         if not invalid_temp.empty:
             logging.warning(f"⚠️ [Data Quality Alert] Detected {len(invalid_temp)} rows with anomalous temperature in {city_name}!")
             
-        # 2. فحص الرطوبة (يجب أن تكون دائماً بين 0% و 100%)
         invalid_humidity = df[(df['humidity'] < 0) | (df['humidity'] > 100)]
         if not invalid_humidity.empty:
             logging.warning(f"⚠️ [Data Quality Alert] Detected {len(invalid_humidity)} rows with impossible humidity in {city_name}!")
             
-        # 3. فحص سرعة الرياح (لا يمكن أن تكون بالسالب)
         invalid_wind = df[df['wind_speed'] < 0]
         if not invalid_wind.empty:
             logging.warning(f"⚠️ [Data Quality Alert] Detected {len(invalid_wind)} rows with negative wind speed in {city_name}!")
 
-        # 🔄 فلترة البيانات: الاحتفاظ فقط بالسجلات السليمة 100% واستبعاد التالفة
+        # 🔄 فلترة البيانات
         valid_df = df[
             (df['temperature'] >= -10) & (df['temperature'] <= 60) &
             (df['humidity'] >= 0) & (df['humidity'] <= 100) &
             (df['wind_speed'] >= 0)
         ].copy()
 
-        # حساب عدد الصفوف المستبعدة إن وجدت
         dropped_rows = len(df) - len(valid_df)
         if dropped_rows > 0:
             logging.error(f"❌ [Data Validation Failed] Dropped {dropped_rows} anomalous rows for {city_name} to preserve DB integrity.")
@@ -136,44 +124,56 @@ def save_to_db(df):
     if df is None or df.empty:
         return
 
-    # التعديل الحاسم هنا: تثبيت الإعدادات صراحة لتطابق الـ Dashboard والـ Docker
-    db_host = 'localhost'  
-    db_user = 'postgres'
-    db_password = 'postgres' # تثبيت الباسورد صراحة
-    db_name = 'weather_db'
-    db_port = '5432'
+    db_host = os.getenv("DB_HOST", "localhost")  
+    db_user = os.getenv("DB_USER", "postgres")
+    db_password = os.getenv("DB_PASSWORD", "postgres")
+    db_name = os.getenv("DB_NAME", "weather_db")
+    db_port = os.getenv("DB_PORT", "5432")
 
     db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
     
     try:
         engine = create_engine(db_url)
-        # إنشاء الجدول وضخ البيانات
         df.to_sql('weather_logs', engine, if_exists='append', index=False)
         logging.info(f"💾 Successfully committed {len(df)} rows to PostgreSQL.")
     except Exception as e:
         logging.error(f"❌ Database Load Error: {e}")
         print(f"❌ Database Connection Error: {e}")
+        raise e  # نرفع الخطأ لكي تلتقطه دالة run_etl_pipeline
 
 # 5. تشغيل الـ Pipeline بالكامل للمدن
 def run_etl_pipeline():
     logging.info("⏰ بدء تشغيل الـ Multi-City ETL Pipeline...")
     print(f"⏰ Pipeline started at: {datetime.now()}")
     
-    all_city_dfs = []
-    for city_name, coords in CITIES.items():
-        raw_data = get_weather_data(city_name, coords['lat'], coords['lon'])
-        clean_df = process_data(raw_data, city_name, coords['lat'], coords['lon'])
-        if clean_df is not None:
-            all_city_dfs.append(clean_df)
+    try:
+        all_city_dfs = []
+        for city_name, coords in CITIES.items():
+            raw_data = get_weather_data(city_name, coords['lat'], coords['lon'])
+            clean_df = process_data(raw_data, city_name, coords['lat'], coords['lon'])
+            if clean_df is not None:
+                all_city_dfs.append(clean_df)
+                
+        if all_city_dfs:
+            final_df = pd.concat(all_city_dfs, ignore_index=True)
             
-    if all_city_dfs:
-        final_df = pd.concat(all_city_dfs, ignore_index=True)
-        save_to_db(final_df)
-        print("🚀 Multi-city data saved to PostgreSQL successfully!")
-    else:
-        print("❌ Pipeline execution failed for all cities.")
+            # حفظ البيانات الخام أولاً
+            save_to_db(final_df)
+            print("🚀 Multi-city data saved to PostgreSQL successfully!")
+            
+            # 🔥 المكان السحري: تشغيل التحليلات المتقدمة فوراً بعد نجاح الحفظ في الـ DB
+            print("📊 Ingestion completed. Triggering advanced analytics calculations...")
+            run_advanced_analytics()
+            
+        else:
+            print("❌ Pipeline execution failed for all cities.")
+            send_alert("Pipeline failed: No valid data was extracted or processed from API.")
+            
+    except Exception as e:
+        # إذا حصل أي خطأ في أي مرحلة، يرسل تنبيه فوري للتليجرام
+        send_alert(str(e))
+        logging.error(f"❌ Critical Pipeline Failure: {e}")
 
 if __name__ == "__main__":
-    # تشغيل الـ Pipeline مرة واحدة صريحة بناءً على أمر الـ Orchestrator
     run_etl_pipeline()
     print("✨ ETL Task executed successfully and finished.")
