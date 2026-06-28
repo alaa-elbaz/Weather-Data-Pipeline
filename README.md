@@ -53,3 +53,15 @@ To run this project locally, follow these steps:
     ```bash
     git clone <your-repository-url>
     cd weather_pipeline
+
+
+    📌 To-Do & Future Roadmap
+
+ - [x] **Unit Testing (pytest):** نكتب Unit Tests باستخدام pytest للتأكد من أن الدوال شغال صح.
+[ ] Production Orchestration: Migrate from the basic schedule library to an enterprise orchestrator like Apache Airflow or n8n for failure monitoring and automated retries.
+
+[ ] Full Containerization: Dockerize the ETL script (main.py) and the web application (app.py) inside docker-compose.yml to achieve environment independence.
+
+[ ] Data Security: Strict decouple of production secrets, reading credentials fully via dynamic os.getenv without local fallbacks.
+
+[ ] Alerting Integration: Add Webhook alerts (Slack/Telegram) to instantly notify on pipeline failures or API timeouts.
