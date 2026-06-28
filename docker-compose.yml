@@ -3,38 +3,30 @@ services:
   db:
     image: postgres:15
     container_name: weather_postgres
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: weather_db
     ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - weather_network
-    restart: always
+      - "5432:5432"  # 🚨 السطر ده حاسم جداً عشان نفتح البورت بره وجوه!
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=weather_db
 
   # 2. واجهة العرض والـ Dashboard (Streamlit)
   web_app:
     build: .
     container_name: weather_streamlit_app
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
     ports:
       - "8501:8501"
     environment:
-      DB_HOST: db
-      DB_USER: postgres
-      DB_PASSWORD: postgres
-      DB_NAME: weather_db
-      DB_PORT: 5432
-    volumes:
-      - .:/app
-    networks:
-      - weather_network
+      - DB_HOST=host.docker.internal
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=weather_db
+      - DB_PORT=5432
     depends_on:
       - db
-    restart: always
-
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   # 3. الـ Orchestrator الرسمي المستقر (n8n)
   orchestrator_n8n:
     image: docker.n8n.io/n8nio/n8n:latest
@@ -55,3 +47,5 @@ volumes:
 
 networks:
   weather_network:
+  # 🚨 السطور دي تحت خالص مهمة جداً لربط الحاويات ببعض
+    driver: bridge

@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 import os
 from dotenv import load_dotenv
 
+# تحميل متغيرات البيئة
 load_dotenv()
 
 st.set_page_config(page_title="Weather Dashboard", layout="wide")
@@ -11,33 +12,31 @@ st.set_page_config(page_title="Weather Dashboard", layout="wide")
 st.title("🌦️ Automated Multi-City Weather Data Pipeline")
 st.subheader("عرض حي ومؤتمت لبيانات الطقس لمدن متعددة")
 
-# إعدادات الاتصال - مرنة للـ Local والـ Docker
-db_host = os.getenv('DB_HOST', 'localhost')
-if db_host == 'db' and not os.path.exists('/.dockerenv'):
-    db_host = 'localhost'
-
-db_host = 'localhost'
-db_user = 'postgres'
-db_password = 'postgres' # تثبيت نفس الباسورد ليتطابق مع الـ Pipeline
-db_name = 'weather_db'
-db_port = '5432'
+# إعدادات الاتصال ثابتة وصريحة لشبكة الدوكر الداخلية
+# استخدام الـ Gateway السحري للدوكر للوصول لجهازك ومنه لقاعدة البيانات فوراً
+# استخدام الـ Gateway السحري المباشر
+db_host = os.getenv("DB_HOST", "host.docker.internal")
+db_user = os.getenv("DB_USER", "postgres")
+db_password = os.getenv("DB_PASSWORD", "postgres")
+db_name = os.getenv("DB_NAME", "weather_db")
+db_port = os.getenv("DB_PORT", "5432")
 
 db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 
 try:
     engine = create_engine(db_url)
-    # جلب البيانات من الجدول
+    # جلب البيانات من الجدول الأساسي
     df = pd.read_sql("SELECT * FROM weather_logs", engine)
     
     if not df.empty:
         st.success("✅ تم تحميل البيانات بنجاح من قاعدة البيانات!")
         
-        # فلتر المدن
+        # فلاتر المدن في القائمة الجانبية
         st.sidebar.header("الفلاتر")
         city = st.sidebar.selectbox("اختر المدينة:", df['city'].unique())
         city_df = df[df['city'] == city]
         
-        # عرض البيانات والمقاييس
+        # عرض المقاييس الأساسية لأحدث قراءة
         col1, col2, col3 = st.columns(3)
         with col1:
             st.metric(label=f"آخر درجة حرارة في {city}", value=f"{city_df['temperature'].iloc[-1]} °C")
@@ -46,15 +45,18 @@ try:
         with col3:
             st.metric(label="سرعة الرياح", value=f"{city_df['wind_speed'].iloc[-1]} km/h")
             
-        # عرض الخريطة التفاعلية والجدول
+        # عرض الموقع الجغرافي
         st.subheader("📍 الموقع الجغرافي للمدينة")
-        st.map(city_df)
+        # تأمين الخريطة برينام بسيط للأعمدة لو تطلب الأمر
+        map_df = city_df[['latitude', 'longitude']].rename(columns={'latitude': 'lat', 'longitude': 'lon'})
+        st.map(map_df)
         
+        # عرض السجل التاريخي
         st.subheader("📊 سجل البيانات التاريخي")
         st.dataframe(city_df.sort_values(by='timestamp', ascending=False))
     else:
-        st.warning("⚠️ قاعدة البيانات فارغة، تأكدي من تشغيل سكريبت الـ ETL.")
+        st.warning("⚠️ قاعدة البيانات فارغة، تأكدي من تشغيل سكريبت الـ ETL وضخ البيانات.")
+
 except Exception as e:
-    # قفلنا القوس هنا وزودنا طباعة الخطأ الحقيقي عشان لو فيه مشكلة تظهر لنا فوراً بدل الرسالة العامة
-    st.info("💡 بانتظار تشغيل قاعدة البيانات وضخ بيانات المدن... (تأكدي من تشغيل الحاويات الآن)")
-    st.error(f"تفاصيل الخطأ الحالي للـ Connection: {e}")
+    st.info("💡 بانتظار استقرار قاعدة البيانات وضخ بيانات المدن...")
+    st.error(f"تفاصيل الاتصال الحالي: جاري المحاولة على Host: ({db_host}) | الخطأ: {e}")
