@@ -242,3 +242,2455 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 	Is the server running on that host and accepting TCP/IP connections?
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-28 15:42:12,300 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:42:12,303 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:42:15,134 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:42:15,153 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:42:15,154 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:42:16,877 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:42:16,921 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:42:16,925 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:42:18,826 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:42:18,835 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:42:19,616 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:42:19,675 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:42:21,890 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:42:21,892 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:42:22,512 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:42:22,526 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:42:22,527 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:42:23,300 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:42:23,309 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:42:23,310 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:42:25,116 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:42:25,127 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:42:25,688 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:42:25,734 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:42:28,566 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:42:28,567 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:42:29,075 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:42:29,098 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:42:29,099 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:42:29,550 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:42:29,560 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:42:29,561 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:42:30,111 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:42:30,121 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:42:30,346 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:42:30,367 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:42:33,078 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:42:33,079 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:42:34,106 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:42:34,134 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:42:34,135 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:42:35,048 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:42:35,058 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:42:35,059 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:42:35,514 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:42:35,522 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:42:35,765 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:42:35,800 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:42:38,705 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:42:38,706 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:42:39,317 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:42:39,332 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:42:39,333 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:42:39,918 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:42:39,929 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:42:39,930 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:42:40,527 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:42:40,543 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:42:40,809 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:42:40,828 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:42:44,046 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:42:44,047 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:42:44,491 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:42:44,503 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:42:44,505 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:42:45,180 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:42:45,203 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:42:45,204 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:42:45,820 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:42:45,829 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:42:46,070 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:42:46,094 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:42:51,101 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:42:51,102 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:42:51,547 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:42:51,558 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:42:51,559 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:42:51,983 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:42:51,998 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:42:51,999 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:42:52,447 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:42:52,456 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:42:52,609 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:42:52,630 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:43:03,499 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:43:03,501 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:43:04,444 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:43:04,464 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:43:04,466 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:43:05,937 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:43:05,957 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:43:05,958 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:43:06,938 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:43:06,956 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:43:07,234 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:43:07,256 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:43:22,214 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:43:22,214 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:43:23,041 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:43:23,059 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:43:23,060 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:43:24,029 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:43:24,038 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:43:24,039 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:43:24,482 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:43:24,505 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:43:24,675 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:43:24,695 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:43:52,076 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:43:52,077 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:43:52,612 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:43:52,624 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:43:52,625 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:43:53,173 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:43:53,180 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:43:53,181 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:43:53,837 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:43:53,846 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:43:54,059 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:43:54,080 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:44:47,067 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:44:47,068 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:44:47,503 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:44:47,539 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:44:47,540 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:44:47,982 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:44:47,989 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:44:47,990 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:44:48,427 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:44:48,457 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:44:48,634 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:44:48,656 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:45:50,362 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:45:50,363 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:45:52,144 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:45:52,155 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:45:52,156 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:45:52,728 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:45:52,736 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:45:52,737 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:45:53,395 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:45:53,403 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:45:53,573 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:45:53,596 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:46:55,351 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:46:55,352 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:46:56,593 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:46:56,618 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:46:56,619 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:46:57,101 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:46:57,132 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:46:57,136 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:46:57,585 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:46:57,609 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:46:57,828 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:46:57,852 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:47:59,670 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:47:59,671 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:48:00,189 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:48:00,201 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:48:00,202 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:48:00,639 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:48:00,651 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:48:00,653 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:48:01,083 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:48:01,090 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:48:01,264 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:48:01,289 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:49:02,913 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:49:02,914 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:49:04,151 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:49:04,162 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:49:04,163 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:49:05,569 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:49:05,579 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:49:05,580 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:49:07,598 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:49:07,611 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:49:07,773 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:49:07,793 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:50:09,184 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:50:09,185 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:50:09,662 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:50:09,685 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:50:09,686 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:50:10,133 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:50:10,144 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:50:10,145 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:50:10,590 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:50:10,606 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:50:10,747 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:50:10,766 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:51:13,651 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:51:13,653 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:52:52,103 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 15:52:52,130 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:52:53,104 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:52:53,240 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:52:53,242 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:52:56,110 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:52:56,157 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:52:58,041 - INFO - 💾 Successfully committed 336 rows to PostgreSQL.
+2026-06-28 15:52:58,120 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:53:03,644 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:53:03,705 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:53:05,724 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:53:05,737 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:53:05,738 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:53:06,465 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:53:06,475 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:53:06,477 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:53:07,463 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:53:07,522 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:53:08,025 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:53:08,074 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:53:10,679 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:53:10,680 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:53:11,110 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:53:11,122 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:53:11,123 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:53:11,596 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:53:11,603 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:53:11,604 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:53:12,068 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:53:12,076 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:53:12,287 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:53:12,307 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:53:14,361 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:53:14,361 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:53:15,050 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:53:15,061 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:53:15,062 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:53:15,490 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:53:15,498 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:53:15,499 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:53:16,048 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:53:16,055 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:53:16,225 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:53:16,247 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:53:18,620 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:53:18,621 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:53:19,361 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:53:19,379 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:53:19,380 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:53:20,162 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:53:20,170 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:53:20,171 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:53:20,677 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:53:20,685 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:53:20,829 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:53:20,856 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:53:24,838 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:53:24,839 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:53:25,441 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:53:25,460 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:53:25,461 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:53:26,060 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:53:26,068 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:53:26,069 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:53:26,881 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:53:26,889 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:53:27,257 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:53:27,281 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:53:32,348 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:53:32,348 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:53:33,029 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:53:33,041 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:53:33,042 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:53:33,720 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:53:33,729 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:53:33,730 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:53:34,644 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:53:34,652 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:53:34,969 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:53:34,991 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:53:42,976 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:53:42,978 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:53:44,425 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:53:44,434 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:53:44,435 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:53:45,324 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:53:45,332 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:53:45,333 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:53:45,783 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:53:45,791 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:53:45,963 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:53:45,983 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:54:00,554 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:54:00,555 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:54:01,004 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:54:01,015 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:54:01,016 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:54:01,451 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:54:01,460 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:54:01,462 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:54:01,919 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:54:01,927 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:54:02,102 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:54:02,124 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:54:29,501 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:54:29,502 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:54:29,940 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:54:29,950 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:54:29,950 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:54:30,414 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:54:30,434 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:54:30,436 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:54:30,931 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:54:30,940 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:54:31,111 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:54:31,131 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:55:24,299 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:55:24,299 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:55:26,378 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:55:26,408 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:55:26,411 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:55:27,413 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:55:27,421 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:55:27,422 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:55:27,913 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:55:27,921 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:55:28,114 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:55:28,135 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:56:29,990 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:56:29,992 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:56:30,616 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:56:30,642 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:56:30,643 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:56:31,069 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:56:31,078 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:56:31,079 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:56:31,524 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:56:31,542 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:56:31,748 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:56:31,768 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:57:33,580 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:57:33,580 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:57:35,306 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:57:35,318 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:57:35,320 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:57:36,530 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:57:36,542 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:57:36,543 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:57:37,429 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:57:37,443 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:57:37,717 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:57:37,748 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:58:39,402 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:58:39,403 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:58:40,554 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:58:40,565 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:58:40,566 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:58:41,275 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:58:41,284 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:58:41,285 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:58:41,913 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:58:41,924 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:58:42,099 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:58:42,120 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 15:59:43,894 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 15:59:43,895 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 15:59:44,362 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 15:59:44,401 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 15:59:44,403 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 15:59:44,848 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 15:59:44,865 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 15:59:44,867 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 15:59:45,342 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 15:59:45,354 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 15:59:45,557 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 15:59:45,584 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:00:49,315 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:00:49,316 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:00:50,111 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:00:50,125 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:00:50,127 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:00:50,556 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:00:50,583 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:00:50,584 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:00:51,099 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:00:51,113 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:00:51,472 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:00:51,491 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:01:53,768 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:01:53,768 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:01:57,035 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:01:57,054 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:01:57,056 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:01:57,534 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:01:57,541 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:01:57,542 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:01:57,999 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:01:58,025 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:01:58,225 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:01:58,243 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:00,344 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:00,345 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:01,965 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:01,994 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:01,996 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:03:07,025 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:03:07,040 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:03:07,042 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:03:10,614 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:03:10,634 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:03:10,817 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:03:10,841 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:12,929 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:12,930 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:16,048 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:16,070 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:16,072 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:03:17,235 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:03:17,257 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:03:17,259 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:03:18,286 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:03:18,298 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:03:18,472 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:03:18,494 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:20,317 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:20,318 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:20,984 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:21,017 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:21,019 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:03:22,856 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:03:22,886 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:03:22,887 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:03:23,764 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:03:23,789 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:03:23,992 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:03:24,011 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:26,078 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:26,079 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:26,921 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:26,950 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:26,953 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:03:27,505 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:03:27,517 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:03:27,518 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:03:28,279 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:03:28,286 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:03:28,449 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:03:28,468 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:30,710 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:30,711 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:31,669 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:31,709 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:31,711 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:03:32,270 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:03:32,302 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:03:32,305 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:03:32,849 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:03:32,866 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:03:33,036 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:03:33,054 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:36,100 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:36,101 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:36,544 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:36,567 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:36,568 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:03:37,057 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:03:37,089 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:03:37,092 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:03:37,547 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:03:37,558 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:03:37,708 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:03:37,727 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:42,395 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:42,396 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:47,445 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:47,467 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:47,468 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:03:54,813 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:03:54,840 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:03:54,841 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:03:57,289 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:03:57,296 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:03:57,536 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:03:57,561 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:03:59,194 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:03:59,194 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:03:59,770 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:03:59,795 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:03:59,797 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:00,435 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:00,443 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:00,444 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:01,111 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:01,133 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:01,355 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:01,373 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:02,961 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:02,962 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:04,721 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:04,749 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:04,751 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:05,667 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:05,687 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:05,688 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:06,991 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:07,008 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:07,201 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:07,222 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:10,156 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:10,158 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:16,774 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:16,812 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:16,814 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:20,016 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:20,042 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:20,044 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:22,302 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:22,310 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:22,494 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:22,514 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:24,477 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:24,478 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:25,906 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:25,934 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:25,936 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:26,486 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:26,517 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:26,519 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:27,139 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:27,166 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:27,346 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:27,372 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:29,217 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:29,218 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:30,703 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:30,712 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:30,713 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:31,593 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:31,603 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:31,604 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:32,248 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:32,266 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:32,474 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:32,493 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:34,076 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:34,076 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:37,231 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:37,253 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:37,255 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:37,693 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:37,715 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:37,717 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:38,152 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:38,170 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:38,323 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:38,343 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:40,735 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:40,736 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:41,190 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:41,212 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:41,213 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:41,857 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:41,882 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:41,884 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:42,858 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:42,877 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:43,057 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:43,076 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:46,009 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:46,010 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:46,457 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:46,500 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:46,502 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:47,009 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:47,040 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:47,059 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:47,670 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:47,677 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:47,825 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:47,846 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:04:52,598 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:04:52,599 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:04:53,041 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:04:53,058 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:04:53,059 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:04:53,710 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:04:53,720 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:04:53,721 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:04:54,156 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:04:54,163 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:04:54,322 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:04:54,343 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:05:02,686 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:05:02,687 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:05:12,706 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.open-meteo.com', port=443) at 0x74cacc5e2470>, 'Connection to api.open-meteo.com timed out. (connect timeout=10)'))
+2026-06-28 16:05:12,709 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:05:22,730 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=31.2001&longitude=29.9187&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.open-meteo.com', port=443) at 0x74cacc5e2d70>, 'Connection to api.open-meteo.com timed out. (connect timeout=10)'))
+2026-06-28 16:05:22,733 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:05:42,533 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)
+2026-06-28 16:05:44,155 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:05:44,156 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:05:57,353 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:05:57,389 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:05:57,391 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:00,546 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:00,580 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:00,582 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:02,362 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:02,376 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:02,577 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:02,612 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:05,746 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:05,747 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:07,508 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:07,520 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:07,521 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:11,488 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:11,504 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:11,505 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:13,134 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:13,142 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:13,295 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:13,314 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:15,062 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:15,063 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:16,264 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:16,275 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:16,276 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:17,214 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:17,240 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:17,243 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:18,189 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:18,196 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:18,346 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:18,365 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:20,024 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:20,025 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:23,967 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:24,390 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:25,299 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:26,347 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:26,366 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:26,368 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:27,119 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:27,130 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:27,414 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:27,441 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:29,420 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:29,421 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:30,490 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:30,500 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:30,501 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:31,472 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:31,480 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:31,480 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:32,683 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:32,692 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:32,886 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:32,905 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:35,292 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:35,293 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:35,734 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:35,765 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:35,767 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:36,340 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:36,370 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:36,373 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:37,143 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:37,169 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:37,327 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:37,347 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:40,514 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:40,514 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:40,956 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:40,997 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:41,000 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:41,447 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:41,460 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:41,461 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:41,895 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:41,922 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:42,105 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:42,124 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:46,675 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:46,676 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:47,211 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:47,227 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:47,229 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:47,655 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:47,663 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:47,664 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:48,095 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:48,102 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:48,245 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:48,264 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:06:56,060 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:06:56,061 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:06:56,821 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:06:56,852 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:06:56,854 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:06:57,838 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:06:57,866 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:06:57,867 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:06:59,628 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:06:59,661 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:06:59,839 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:06:59,857 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:07:14,956 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:07:14,959 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:07:16,886 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:07:16,906 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:07:16,908 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:07:18,630 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:07:18,642 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:07:18,644 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:07:20,673 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:07:20,701 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:07:20,863 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:07:20,882 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:07:48,831 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:07:48,832 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:07:51,813 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:07:51,829 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:07:51,830 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:07:53,038 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:07:53,048 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:07:53,049 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:07:53,908 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:07:53,917 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:07:54,074 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:07:54,094 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:08:46,845 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:08:46,845 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:08:47,626 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:08:47,643 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:08:47,644 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:08:48,366 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:08:48,395 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:08:48,397 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:08:49,222 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:08:49,261 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:08:49,419 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:08:49,438 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:09:50,876 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:09:50,877 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:09:51,810 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:09:51,827 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:09:51,828 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:09:52,443 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:09:52,451 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:09:52,452 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:09:54,102 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:09:54,113 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:09:54,288 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:09:54,307 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:10:55,623 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:10:55,624 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:10:56,186 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:10:56,225 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:10:56,226 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:10:56,821 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:10:56,831 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:10:56,833 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:10:57,277 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:10:57,284 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:10:57,419 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:10:57,440 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:11:58,896 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:11:58,897 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:11:59,330 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:11:59,340 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:11:59,340 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:11:59,766 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:11:59,785 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:11:59,786 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:12:00,279 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:12:00,293 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:12:00,446 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:12:00,465 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:13:01,787 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:13:01,787 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:13:02,351 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:13:02,367 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:13:02,368 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:13:02,838 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:13:02,858 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:13:02,860 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:13:03,290 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:13:03,305 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:13:03,493 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:13:03,514 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:14:04,955 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:04,955 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:14:14,975 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.open-meteo.com', port=443) at 0x734d7c6c2470>, 'Connection to api.open-meteo.com timed out. (connect timeout=10)'))
+2026-06-28 16:14:14,977 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:14:32,043 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)
+2026-06-28 16:14:32,045 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:14:33,107 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=24.0889&longitude=32.8998&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:34,797 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:34,797 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:14:34,821 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:34,822 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:14:34,849 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=31.2001&longitude=29.9187&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:34,850 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:14:34,869 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=24.0889&longitude=32.8998&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:36,375 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:36,376 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:14:36,402 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:36,403 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:14:36,425 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=31.2001&longitude=29.9187&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:36,427 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:14:36,447 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=24.0889&longitude=32.8998&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:38,270 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:38,271 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:14:38,301 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:38,302 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:14:38,336 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=31.2001&longitude=29.9187&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:38,337 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:14:38,375 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=24.0889&longitude=32.8998&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:40,567 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:40,568 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:14:40,594 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:40,595 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:14:40,612 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=31.2001&longitude=29.9187&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:40,613 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:14:40,631 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=24.0889&longitude=32.8998&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:43,718 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:43,719 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:14:43,749 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:43,750 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:14:43,777 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=31.2001&longitude=29.9187&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:43,778 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:14:43,798 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=24.0889&longitude=32.8998&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:48,792 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:48,793 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:14:48,864 - ERROR - ❌ API Connection Error for Cairo: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=30.0444&longitude=31.2357&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:48,864 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:14:48,884 - ERROR - ❌ API Connection Error for Alexandria: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=31.2001&longitude=29.9187&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:48,885 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:14:48,908 - ERROR - ❌ API Connection Error for Aswan: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=24.0889&longitude=32.8998&hourly=temperature_2m,relativehumidity_2m,windspeed_10m&timezone=Africa/Cairo (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-06-28 16:14:56,874 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:14:56,874 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:15:01,056 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:15:01,069 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:15:01,070 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:15:11,914 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:15:11,922 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:15:11,923 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:15:14,863 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:15:14,874 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:15:15,108 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:15:15,136 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:15:17,853 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:15:17,854 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:15:21,969 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:15:21,984 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:15:21,986 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:15:22,695 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:15:22,706 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:15:22,708 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:15:23,467 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:15:23,480 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:15:24,116 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:15:24,137 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:15:26,764 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:15:26,765 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:15:27,648 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:15:27,668 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:15:27,669 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:15:28,602 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:15:28,611 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:15:28,611 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:15:29,515 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:15:29,529 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:15:29,700 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:15:29,721 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:15:31,436 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:15:31,437 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:15:32,977 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:15:32,988 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:15:32,990 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:15:33,657 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:15:33,670 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:15:33,670 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:15:34,723 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:15:34,734 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:15:34,928 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:15:34,950 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:15:37,278 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:15:37,279 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:15:45,396 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:15:45,407 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:15:45,408 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:15:46,795 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:15:46,803 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:15:46,804 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:15:47,579 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:15:47,595 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:15:47,773 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:15:47,794 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:15:49,649 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:15:49,650 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:15:50,700 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:15:50,722 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:15:50,725 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:15:51,713 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:15:51,729 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:15:51,730 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:15:53,084 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:15:53,106 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:15:53,285 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:15:53,305 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:15:55,121 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:15:55,122 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:15:56,378 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:15:56,391 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:15:56,392 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:15:57,457 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:15:57,478 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:15:57,479 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:15:58,808 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:15:58,818 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:15:59,033 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:15:59,060 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:16:01,654 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:16:01,655 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:16:04,344 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:16:04,360 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:16:04,361 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:16:06,901 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:16:06,910 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:16:06,911 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:16:08,079 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:16:08,090 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:16:08,258 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:16:08,280 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:16:10,895 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:16:10,896 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:16:11,738 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:16:11,752 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:16:11,753 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:16:12,717 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:16:12,725 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:16:12,726 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:16:13,450 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:16:13,458 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:16:13,624 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:16:13,647 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:16:16,720 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:16:16,721 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:16:17,546 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:16:17,556 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:16:17,557 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:16:17,993 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:16:18,004 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:16:18,005 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:16:18,442 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:16:18,454 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:16:18,607 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:16:18,630 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:16:23,236 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:16:23,237 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:16:23,671 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:16:23,695 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:16:23,697 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:16:24,130 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:16:24,138 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:16:24,139 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:16:24,573 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:16:24,589 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:16:24,747 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:16:24,768 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:16:32,539 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:16:32,540 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:16:33,096 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:16:33,114 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:16:33,115 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:16:33,559 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:16:33,575 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:16:33,576 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:16:34,017 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:16:34,046 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:16:34,210 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:16:34,229 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:16:48,392 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:16:48,392 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:16:51,877 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:16:51,902 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:16:51,904 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:16:57,299 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:16:57,319 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:16:57,321 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:16:58,978 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:16:59,001 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:16:59,167 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:16:59,187 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:00,885 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:00,886 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:01,717 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:01,729 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:01,730 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:02,400 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:02,408 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:02,409 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:03,125 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:03,140 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:03,296 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:03,315 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:04,999 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:05,000 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:07,338 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:07,367 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:07,369 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:09,770 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:09,780 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:09,781 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:14,565 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:14,573 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:14,760 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:14,780 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:16,472 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:16,472 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:19,270 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:19,280 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:19,281 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:19,753 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:19,761 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:19,762 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:20,325 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:20,333 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:20,522 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:20,541 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:22,247 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:22,248 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:24,311 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:24,321 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:24,322 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:24,902 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:24,915 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:24,916 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:25,359 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:25,367 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:25,533 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:25,555 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:27,301 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:27,302 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:28,041 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:28,057 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:28,058 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:28,581 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:28,593 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:28,594 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:30,152 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:30,233 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:30,503 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:30,520 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:32,659 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:32,660 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:33,758 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:33,768 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:33,769 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:34,419 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:34,436 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:34,437 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:35,227 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:35,239 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:35,385 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:35,404 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:38,631 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:38,632 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:39,178 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:39,201 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:39,203 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:39,873 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:39,897 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:39,898 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:40,868 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:40,893 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:41,051 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:41,071 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:45,712 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:45,713 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:46,226 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:46,237 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:46,238 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:46,878 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:46,886 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:46,887 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:47,690 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:47,698 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:47,847 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:47,868 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:17:55,753 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:17:55,754 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:17:56,324 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:17:56,335 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:17:56,336 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:17:57,010 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:17:57,018 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:17:57,019 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:17:57,841 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:17:57,856 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:17:58,046 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:17:58,074 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:18:12,090 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:18:12,091 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:18:13,289 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:18:13,298 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:18:13,299 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:18:13,728 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:18:13,736 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:18:13,736 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:18:14,646 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:18:14,657 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:18:14,811 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:18:14,830 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:18:41,667 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:18:41,667 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:18:44,331 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:18:44,347 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:18:44,348 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:18:45,198 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:18:45,207 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:18:45,208 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:18:45,937 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:18:45,964 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:18:46,123 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:18:46,142 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:19:38,895 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:19:38,895 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:19:40,119 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:19:40,140 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:19:40,141 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:19:41,355 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:19:41,370 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:19:41,371 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:19:42,607 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:19:42,615 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:19:42,780 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:19:42,799 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:20:44,168 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:20:44,169 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:20:45,679 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:20:45,706 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:20:45,708 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:20:47,154 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:20:47,188 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:20:47,190 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:20:47,797 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:20:47,824 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:20:47,988 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:20:48,009 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:21:49,464 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:21:49,465 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:21:50,713 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:21:50,739 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:21:50,741 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:21:51,772 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:21:51,787 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:21:51,791 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:21:54,608 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:21:54,616 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:21:54,801 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:21:54,823 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:22:56,166 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:22:56,167 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:22:57,510 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:22:57,533 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:22:57,535 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:22:58,500 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:22:58,528 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:22:58,530 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:22:59,641 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:22:59,649 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:22:59,805 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:22:59,824 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:24:01,151 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:24:01,152 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:24:02,006 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:24:02,032 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:24:02,034 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:24:02,819 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:24:02,854 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:24:02,856 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:24:03,686 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:24:03,717 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:24:03,875 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:24:03,895 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:25:05,258 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:25:05,258 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:25:05,809 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:25:05,850 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:25:05,852 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:25:06,527 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:25:06,551 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:25:06,553 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:25:07,041 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:25:07,060 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:25:07,225 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:25:07,244 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:26:08,709 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:26:08,709 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:26:11,918 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:26:11,942 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:26:11,944 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:26:15,925 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:26:15,936 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:26:15,938 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:26:17,245 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:26:17,255 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:26:17,417 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:26:17,445 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:26:19,135 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:26:19,136 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:26:21,715 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:26:21,739 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:26:21,741 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:26:23,570 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:26:23,609 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:26:23,611 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:26:27,208 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:26:27,218 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:26:27,370 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:26:27,390 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:26:29,270 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:26:29,271 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:26:32,086 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:26:32,128 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:26:32,130 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:26:34,999 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:26:35,012 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:26:35,013 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:26:36,341 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:26:36,349 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:26:36,532 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:26:36,551 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:26:38,304 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:26:38,305 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:26:40,372 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:26:40,398 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:26:40,400 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:26:41,565 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:26:41,584 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:26:41,586 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:26:42,625 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:26:42,646 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:26:42,810 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:26:42,831 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:26:45,068 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:26:45,069 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:26:47,340 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:26:47,354 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:26:47,355 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:26:49,227 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:26:49,235 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:26:49,236 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:26:49,820 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:26:49,851 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:26:50,203 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:26:50,221 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:26:53,515 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:26:53,516 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:26:54,031 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:26:54,047 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:26:54,049 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:26:54,593 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:26:54,624 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:26:54,627 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:26:55,134 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:26:55,142 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:26:55,302 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:26:55,320 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:26:59,771 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:26:59,772 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:27:00,746 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:27:00,770 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:27:00,772 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:27:01,257 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:27:01,266 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:27:01,266 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:27:01,708 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:27:01,716 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:27:01,873 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:27:01,896 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:27:10,251 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:27:10,252 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:27:12,340 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:27:12,373 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:27:12,375 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:27:15,461 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:27:15,489 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:27:15,491 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:27:16,440 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:27:16,460 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:27:16,618 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:27:16,637 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:27:30,781 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:27:30,781 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:27:31,254 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:27:31,266 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:27:31,267 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:27:31,776 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:27:31,794 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:27:31,795 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:27:32,239 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:27:32,262 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:27:32,423 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:27:32,444 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:27:59,411 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:27:59,412 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:27:59,850 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:27:59,885 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:27:59,887 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:28:00,324 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:28:00,331 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:28:00,332 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:28:00,764 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:28:00,773 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:28:00,928 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:28:00,948 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:28:53,378 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:28:53,378 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:28:53,830 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:28:53,863 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:28:53,865 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:28:54,340 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:28:54,350 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:28:54,352 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:28:54,855 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:28:54,880 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:28:55,041 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:28:55,060 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:29:56,560 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:29:56,560 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:29:58,940 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:29:58,961 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:29:58,964 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:29:59,754 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:29:59,767 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:29:59,768 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:30:00,407 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:30:00,420 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:30:00,654 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:30:00,677 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:31:02,098 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:31:02,099 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:31:02,546 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:31:02,562 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:31:02,563 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:31:03,023 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:31:03,037 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:31:03,038 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:31:03,491 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:31:03,499 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:31:03,657 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:31:03,678 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:32:05,109 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:32:05,110 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:32:06,114 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:32:06,137 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:32:06,138 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:32:07,031 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:32:07,039 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:32:07,040 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:32:07,923 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:32:07,931 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:32:08,082 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:32:08,102 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:33:09,708 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:33:09,708 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:33:10,150 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:33:10,180 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:33:10,182 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:33:10,611 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:33:10,618 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:33:10,619 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:33:11,049 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:33:11,059 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:33:11,205 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:33:11,226 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:34:12,671 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:34:12,672 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:34:13,107 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:34:13,118 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:34:13,119 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:34:13,879 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:34:13,895 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:34:13,897 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:34:14,394 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:34:14,401 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:34:14,553 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:34:14,572 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:35:16,029 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:35:16,030 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:35:16,516 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:35:16,531 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:35:16,532 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:35:16,978 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:35:16,993 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:35:16,994 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:35:17,441 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:35:17,459 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:35:17,625 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:35:17,645 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:36:19,112 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:36:19,113 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:36:19,621 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:36:19,632 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:36:19,632 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:36:20,062 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:36:20,079 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:36:20,081 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:36:20,541 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:36:20,549 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:36:20,698 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:36:20,716 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:37:22,216 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:37:22,216 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:37:22,707 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:37:22,750 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:37:22,753 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:37:23,262 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:37:23,294 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:37:23,298 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:37:24,138 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:37:24,154 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:37:24,331 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:37:24,361 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:38:26,076 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:38:26,077 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:38:26,532 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:38:26,564 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:38:26,566 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:38:27,072 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:38:27,095 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:38:27,097 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:38:27,549 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:38:27,575 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:38:27,730 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:38:27,750 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:39:29,159 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:39:29,160 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:39:29,975 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:39:29,985 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:39:29,986 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:39:30,433 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:39:30,441 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:39:30,442 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:39:30,896 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:39:30,905 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:39:31,075 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:39:31,095 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 16:40:32,836 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 16:40:32,837 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 16:40:33,392 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 16:40:33,415 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 16:40:33,417 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 16:40:34,266 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 16:40:34,279 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 16:40:34,280 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 16:40:34,728 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 16:40:34,735 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 16:40:34,886 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 16:40:34,906 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:25:30,886 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:25:30,887 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:25:31,645 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:25:31,654 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:25:31,655 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:25:32,087 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:25:32,095 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:25:32,096 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:25:32,525 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:25:32,555 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:25:32,861 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:25:32,891 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:26:35,822 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:26:35,823 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:26:36,281 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:26:36,312 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:26:36,314 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:26:36,766 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:26:36,792 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:26:36,794 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:26:37,252 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:26:37,266 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:26:37,465 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:26:37,486 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:27:39,717 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:27:39,717 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:27:40,161 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:27:40,189 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:27:40,190 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:27:40,627 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:27:40,639 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:27:40,640 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:27:41,086 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:27:41,094 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:27:41,336 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:27:41,390 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:28:43,594 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:28:43,594 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:28:44,101 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:28:44,121 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:28:44,123 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:28:44,908 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:28:44,915 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:28:44,917 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:28:45,798 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:28:45,805 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:28:45,996 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:28:46,017 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:29:48,378 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:29:48,379 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:29:49,020 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:29:49,038 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:29:49,040 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:29:53,426 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:29:53,435 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:29:53,436 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:29:54,493 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:29:54,517 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:29:54,734 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:29:54,752 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:30:57,099 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:30:57,101 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:30:57,583 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:30:57,601 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:30:57,602 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:30:58,035 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:30:58,042 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:30:58,044 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:30:58,483 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:30:58,491 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:30:58,735 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:30:58,757 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:32:01,061 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:32:01,062 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:32:01,511 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:32:01,536 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:32:01,537 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:32:02,024 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:32:02,035 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:32:02,037 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:32:02,485 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:32:02,515 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:32:02,764 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:32:02,785 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:33:04,622 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:33:04,623 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:33:05,439 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:33:05,451 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:33:05,454 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:33:06,335 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:33:06,343 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:33:06,345 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:33:07,223 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:33:07,232 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:33:07,388 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:33:07,406 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:34:09,611 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:34:09,611 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:34:10,503 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:34:10,514 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:34:10,516 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:34:10,971 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:34:10,997 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:34:11,001 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:34:11,447 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:34:11,459 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:34:11,653 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:34:11,675 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:35:13,535 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:35:13,536 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:35:13,981 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:35:14,003 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:35:14,004 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:35:14,437 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:35:14,455 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:35:14,457 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:35:14,898 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:35:14,932 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:35:15,149 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:35:15,169 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:36:17,604 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:36:17,605 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:36:18,499 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:36:18,512 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:36:18,513 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:36:19,220 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:36:19,239 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:36:19,240 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:36:20,148 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:36:20,160 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:36:20,333 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:36:20,357 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:22,884 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:22,884 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:23,324 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:23,344 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:23,346 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:23,778 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:23,795 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:23,797 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:24,229 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:24,246 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:24,447 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:24,466 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:28,238 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:28,239 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:28,674 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:28,684 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:28,685 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:29,172 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:29,189 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:29,190 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:29,625 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:29,634 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:29,805 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:29,826 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:32,731 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:32,732 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:33,175 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:33,190 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:33,191 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:33,613 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:33,621 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:33,622 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:34,062 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:34,075 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:34,271 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:34,291 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:37,012 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:37,012 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:37,448 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:37,458 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:37,459 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:37,902 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:37,914 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:37,916 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:38,353 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:38,379 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:38,553 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:38,571 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:40,675 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:40,675 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:41,145 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:41,156 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:41,157 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:41,628 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:41,639 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:41,640 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:42,122 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:42,133 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:42,301 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:42,321 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:45,260 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:45,261 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:45,705 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:45,713 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:45,714 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:46,161 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:46,182 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:46,184 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:46,629 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:46,637 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:46,788 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:46,808 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:49,953 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:49,953 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:50,623 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:50,645 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:50,647 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:51,539 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:51,549 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:51,550 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:51,997 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:52,010 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:52,177 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:52,195 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:37:57,882 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:37:57,883 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:37:58,389 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:37:58,421 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:37:58,422 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:37:58,854 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:37:58,865 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:37:58,866 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:37:59,426 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:37:59,435 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:37:59,617 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:37:59,636 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:38:08,146 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:38:08,147 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:38:08,869 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:38:08,892 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:38:08,893 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:38:09,638 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:38:09,649 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:38:09,650 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:38:10,171 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:38:10,182 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:38:10,407 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:38:10,434 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:38:25,108 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:38:25,108 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:38:25,559 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:38:25,569 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:38:25,570 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:38:26,006 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:38:26,015 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:38:26,016 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:38:26,438 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:38:26,446 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:38:26,595 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:38:26,614 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:38:53,796 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:38:53,797 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:38:54,396 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:38:54,410 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:38:54,411 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:38:54,934 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:38:54,942 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:38:54,943 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:38:55,394 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:38:55,401 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:38:55,569 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:38:55,590 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:39:48,426 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:39:48,427 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:39:49,188 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:39:49,203 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:39:49,204 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:39:49,764 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:39:49,779 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:39:49,781 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:39:50,334 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:39:50,349 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:39:50,521 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:39:50,538 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-28 17:40:52,855 - INFO - ⏰ بدء تشغيل الـ Multi-City ETL Pipeline...
+2026-06-28 17:40:52,857 - INFO - ⏳ Extracting data for Cairo from Open-Meteo API...
+2026-06-28 17:40:53,295 - INFO - ✅ Data extracted successfully for Cairo.
+2026-06-28 17:40:53,305 - INFO - ⚡ Transformation & Validation complete for Cairo. Clean Rows: 168
+2026-06-28 17:40:53,306 - INFO - ⏳ Extracting data for Alexandria from Open-Meteo API...
+2026-06-28 17:40:53,739 - INFO - ✅ Data extracted successfully for Alexandria.
+2026-06-28 17:40:53,759 - INFO - ⚡ Transformation & Validation complete for Alexandria. Clean Rows: 168
+2026-06-28 17:40:53,761 - INFO - ⏳ Extracting data for Aswan from Open-Meteo API...
+2026-06-28 17:40:54,242 - INFO - ✅ Data extracted successfully for Aswan.
+2026-06-28 17:40:54,271 - INFO - ⚡ Transformation & Validation complete for Aswan. Clean Rows: 168
+2026-06-28 17:40:54,436 - INFO - 💾 Successfully committed 504 rows to PostgreSQL.
+2026-06-28 17:40:54,465 - ERROR - ❌ Critical Pipeline Failure: (psycopg2.errors.UndefinedTable) relation "weather_data" does not exist
+LINE 1: SELECT * FROM weather_data
+                      ^
+
+[SQL: SELECT * FROM weather_data]
+(Background on this error at: https://sqlalche.me/e/20/f405)

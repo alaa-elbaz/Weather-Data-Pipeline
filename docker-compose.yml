@@ -1,20 +1,28 @@
+version: '3.8'
+
 services:
   # 1. قاعدة البيانات (PostgreSQL)
   db:
     image: postgres:15
     container_name: weather_postgres
     ports:
-      - "5432:5432"  # 🚨 السطر ده حاسم جداً عشان نفتح البورت بره وجوه!
+      - "5432:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=weather_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - weather_network
 
   # 2. واجهة العرض والـ Dashboard (Streamlit)
   web_app:
-    build: .
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
     container_name: weather_streamlit_app
-    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
+    command: streamlit run src/app.py --server.port=8501 --server.address=0.0.0.0
     ports:
       - "8501:8501"
     environment:
@@ -27,12 +35,25 @@ services:
       - db
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    networks:
+      - weather_network
+
+  # 3. الـ Orchestrator الرسمي المستقر (n8n)
+  # 3. الـ Orchestrator الرسمي المستقر (n8n)
+  # 3. الـ Orchestrator الرسمي المستقر (n8n)
+  # 3. الـ Orchestrator الرسمي المستقر (n8n)
   # 3. الـ Orchestrator الرسمي المستقر (n8n)
   orchestrator_n8n:
-    image: docker.n8n.io/n8nio/n8n:latest
+    image: n8nio/n8n:latest
     container_name: weather_n8n_orchestrator
+    user: root  # 🚨 ضروري جداً عشان ندي الحاوية صلاحية تسطيب بايثون
     ports:
       - "5678:5678"
+    environment:
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
+    # 🚨 السطر ده بيسطب بايثون 3 على البيئة الافتراضية للـ n8n أول ما تقوم فوراً:
+    command: /bin/sh -c "apt-get update && apt-get install -y python3 python3-pip && n8n"
     volumes:
       - n8n_data:/home/node/.n8n
     networks:
@@ -47,5 +68,4 @@ volumes:
 
 networks:
   weather_network:
-  # 🚨 السطور دي تحت خالص مهمة جداً لربط الحاويات ببعض
     driver: bridge

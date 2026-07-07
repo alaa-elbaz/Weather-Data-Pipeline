@@ -7,7 +7,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 # استدعاء دالة التحليلات المتقدمة من السكريبت الآخر
-from analysis import run_advanced_analytics
+from src.analysis import run_advanced_analytics
 
 # تحميل متغيرات البيئة الآمنة
 load_dotenv()

@@ -5,3 +5,4 @@ sqlalchemy
 python-dotenv
 streamlit
 schedule
+plotly>=5.0.0

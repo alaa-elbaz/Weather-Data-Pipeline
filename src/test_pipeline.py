@@ -2,7 +2,7 @@ import pytest
 import pandas as pd
 import requests
 import requests_mock
-from main import get_weather_data, process_data
+from src.main import get_weather_data, process_data
 
 # 1. اختبار دالة جلب البيانات (get_weather_data) في حالة النجاح
 def test_get_weather_data_success():
